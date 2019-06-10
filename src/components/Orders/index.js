@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { url } from "../../index.js";
+import { endpoint } from "../../config";
 import { STATUS } from "../../constants";
 
 import Button from "../Button";
@@ -48,7 +48,7 @@ export default function GetOrders() {
     setMessage("Fetching orders...");
     setStatus(STATUS.RUNNING);
 
-    fetch(url, {
+    fetch(endpoint, {
       method: "POST",
       headers: {
         Authorization: `ApiKey ${email}:${apiKey}`,

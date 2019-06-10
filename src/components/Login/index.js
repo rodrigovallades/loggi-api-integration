@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { url } from "../../index";
+import { endpoint } from "../../config";
 import { STATUS } from "../../constants";
 
 import Button from "../Button";
@@ -33,7 +33,7 @@ export default function Login() {
     setApiMessage("Fetching API key...");
     setStatus(STATUS.RUNNING);
 
-    fetch(url, {
+    fetch(endpoint, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
