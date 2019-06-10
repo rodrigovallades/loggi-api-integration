@@ -103,7 +103,10 @@ export default function GetShops() {
                 onClick={() => handleClickShop(city.node.pk)}
               >
                 {city.node.name}
-                <span className="badge badge-primary badge-pill">
+                <span
+                className={`badge badge-pill ${
+                  shopId === city.node.pk ? "badge-success" : "badge-primary"
+                }`}>
                   id: {city.node.pk}
                 </span>
               </li>
