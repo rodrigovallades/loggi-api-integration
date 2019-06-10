@@ -1,10 +1,10 @@
-# Loggi - Get API key
+# Loggi - GraphQL integration app
 
 [Check out the API documentation for more info](https://docs.api.loggi.com/)
 
-This repo shows how to fetch the Loggi's API key from the GraphQL endpoint.
+This repo provides some examples of how to integrate with Loggi's GraphQL endpoint.
 
-## Routes
+## Examples
 
 - /login
 - /orders
